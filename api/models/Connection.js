@@ -1,16 +1,15 @@
 const mongoose = require('mongoose')
 
-const ConnectionSchema = new mongoose.Schema(
+const connectionSchema = new mongoose.Schema(
   {
-    name: {
-      type: String,
-      require: true,
-    },
-    count: {
-      type: Number,
+    loggedTime: {
+      type: Date,
+      default: Date.now,
     },
   },
   { timestamps: true }
 )
 
-module.exports = mongoose.model('Connection', ConnectionSchema)
+const ConnectionModel = mongoose.model('Connection', connectionSchema)
+
+module.exports = ConnectionModel

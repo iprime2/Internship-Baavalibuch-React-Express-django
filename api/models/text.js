@@ -10,4 +10,6 @@ const TextSchema = new mongoose.Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.model('text', TextSchema)
+const textModel = mongoose.model('Text', TextSchema)
+
+module.exports = textModel
