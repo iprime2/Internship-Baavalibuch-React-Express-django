@@ -1,17 +1,29 @@
-require('dotenv').config()
 const express = require('express')
+const cors = require('cors')
+const app = express()
+
+require('dotenv').config()
 
 // db connection
 const connectDB = require('./db/dbConnect')
 
-const app = express()
 const PORT = process.env.PORT || 1010
+
+const textRoutes = require('./routes/text')
+
+app.use(cors())
+app.use(express.json())
+
+// routes
+
+app.use('/api/text', textRoutes)
 
 const start = async () => {
   try {
-    await connectDB(process.env.MONGODB_URL)
+    const db = await connectDB(process.env.MONGODB_URL)
+    // db.on('error', console.error.bind(console, 'MongoDB connection error:'))
     console.log('DB Connected')
-    app.listen(process.env.PORT || 8800, () => {
+    app.listen(PORT, () => {
       console.log('Server running on : ' + process.env.PORT)
     })
   } catch (error) {
