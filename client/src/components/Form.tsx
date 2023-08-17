@@ -5,12 +5,16 @@ import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { ClipLoader } from 'react-spinners'
 import toast from 'react-hot-toast'
+import DisplayNgrams from './DisplayNgrams'
 
 const Form = () => {
   const [text, setText] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
   const apiUrl = process.env.REACT_APP_API_URL
-  const [data, setData] = useState<string>('')
+  const [data, setData] = useState<{
+    text1_ngrams: string[][]
+    text2_ngrams: string[][]
+  } | null>(null)
 
   const handleText = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
@@ -24,23 +28,12 @@ const Form = () => {
         text,
       })
 
+      console.log(res)
       const data = res.data
 
-      // const ngramsRes = await axios.post(
-      //   'http://127.0.0.1:8000/api/ngrams-text/',
-      //   data,
-      //   {
-      //     headers: {
-      //       'Content-Type': 'application/json',
-      //       'Access-Control-Allow-Origin': 'http://localhost:3000', // Update with your React app's origin
-      //       'Access-Control-Allow-Methods': 'POST',
-      //     },
-      //   }
-      // )
+      setData(data)
 
       toast.success('Success!')
-
-      console.log(res)
     } catch (error) {
       toast.error('Something went wrong!!')
       console.log(error)
@@ -50,17 +43,20 @@ const Form = () => {
   }
 
   return (
-    <div className='flex flex-col w-[50%] gap-2'>
-      <Input
-        type='text'
-        placeholder='Text'
-        onChange={handleText}
-        disabled={loading}
-      />
-      <Button disabled={loading} onClick={handleClick}>
-        {loading && <ClipLoader size={15} color='white' />} &nbsp; Send
-      </Button>
-    </div>
+    <>
+      <div className='flex flex-col w-[50%] gap-2'>
+        <Input
+          type='text'
+          placeholder='Text'
+          onChange={handleText}
+          disabled={loading}
+        />
+        <Button disabled={loading} onClick={handleClick}>
+          {loading && <ClipLoader size={15} color='white' />} &nbsp; Send
+        </Button>
+      </div>
+      <DisplayNgrams data={data} />
+    </>
   )
 }
 

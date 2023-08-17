@@ -9,7 +9,7 @@ function App() {
     <ThemeProvider>
       <Toaster />
       <Navbar />
-      <div className='flex items-center justify-center p-5 mx-auto mt-[10px] border-2 border-slate-200'>
+      <div className='flex flex-col items-center justify-center gap-10 p-5 mx-auto mt-[10px] border-2 border-slate-200'>
         <Form />
       </div>
     </ThemeProvider>
