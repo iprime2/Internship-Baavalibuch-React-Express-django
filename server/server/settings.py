@@ -53,6 +53,8 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 ROOT_URLCONF = 'server.urls'
 
 TEMPLATES = [
@@ -71,11 +73,7 @@ TEMPLATES = [
     },
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  
-    'http://localhost:5050',  
 
-]
 
 CORS_ALLOW_METHODS = (
     "DELETE",
