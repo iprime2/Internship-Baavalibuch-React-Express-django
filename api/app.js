@@ -20,7 +20,7 @@ app.use('/api/text', textRoutes)
 
 const start = async () => {
   try {
-    const db = await connectDB(process.env.MONGODB_URL)
+    const db = await connectDB(process.env.MONGO_URI)
     // db.on('error', console.error.bind(console, 'MongoDB connection error:'))
     console.log('DB Connected')
     app.listen(PORT, () => {
