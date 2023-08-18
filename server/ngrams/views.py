@@ -15,8 +15,7 @@ def ngram_comparison(request):
 
             ngrams1 = list(ngrams(text1.split(), ngram_size))
             ngrams2 = list(ngrams(text2.split(), ngram_size))
-
-            print("Hello world")
+    
 
             comparison = {
                 'text1_ngrams': ngrams1,
