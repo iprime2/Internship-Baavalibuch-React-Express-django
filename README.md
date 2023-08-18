@@ -19,83 +19,83 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
 
 ## Getting Started
 
-  ### Prerequisites
+### Prerequisites
+
+- Node.js and npm installed on your machine
+- pnpm package manager. 
+- Python and Django installed on your machine
+
+### Installation
+
+  1. Install pnpm manager
+  ```shell
+  npm install -g npm
+  ```
   
-  - Node.js and npm installed on your machine
-  - pnpm package manager. 
-  - Python and Django installed on your machine
+  2. Clone the repository:
   
-  ### Installation
+  ```shell
+  git clone https://github.com/iprime2/Internship-Baavalibuch-React-Express-django
+  ```
   
-    1. Install pnpm manager
-    ```shell
-    npm install -g npm
-    ```
-    
-    2. Clone the repository:
-    
-    ```shell
-    git clone https://github.com/iprime2/Internship-Baavalibuch-React-Express-django
-    ```
-    
-    3. Install dependencies for the api backend:
-    
-    ```shell
-    cd api
-    npm install
-    ```
-    
-    5. Install dependencies for the React frontend:
-    
-    ```shell
-    cd client
-    pnpm install
-    ```
-    
-    6. Install dependencies for the Django backend:
-    
-    ```shell
-    cd server
-    pip install -r requirements.txt
-    ```
+  3. Install dependencies for the api backend:
   
-  ### Configuration
+  ```shell
+  cd api
+  npm install
+  ```
   
-    1. ExpressJS Backend:
-       - create new file `.env`.
-       - Create the MongoDB connection URL in the `.env` file `MONGO_URI`.
-    
-    2. Django API:
-       - Update the Django settings in the `settings.py` file, if necessary.
-    
-    3. React Frontend:
-       - Create the `.env` file
-       - Create a new variable API_URL to link with ExpressJS backend.
+  5. Install dependencies for the React frontend:
   
-  ### Usage
-    1. Start the ExpressJS backend:
+  ```shell
+  cd client
+  pnpm install
+  ```
   
-       ```bash
-       cd api
-       npm start
-       ```
-      The backend will start running on http://localhost:8080.
+  6. Install dependencies for the Django backend:
   
-    2. Start the Django API server:
+  ```shell
+  cd server
+  pip install -r requirements.txt
+  ```
+
+### Configuration
+
+  1. ExpressJS Backend:
+     - create new file `.env`.
+     - Create the MongoDB connection URL in the `.env` file `MONGO_URI`.
   
-        ```bash
-        cd server
-        python manage.py runserver
-        ```
-      The python backend will start running on http://127.0.0.1:8000/
+  2. Django API:
+     - Update the Django settings in the `settings.py` file, if necessary.
   
-    4. Start the React frontend:
-  
-       ```bash
-        cd client
-        pnpm run start
-       ```
-      The frontend will start running on http://localhost:3000.
+  3. React Frontend:
+     - Create the `.env` file
+     - Create a new variable API_URL to link with ExpressJS backend.
+
+### Usage
+  1. Start the ExpressJS backend:
+
+     ```bash
+     cd api
+     npm start
+     ```
+    The backend will start running on http://localhost:8080.
+
+  2. Start the Django API server:
+
+      ```bash
+      cd server
+      python manage.py runserver
+      ```
+    The python backend will start running on http://127.0.0.1:8000/
+
+  4. Start the React frontend:
+
+     ```bash
+      cd client
+      pnpm run start
+     ```
+    The frontend will start running on http://localhost:3000.
   
     
   
