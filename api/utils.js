@@ -1,1 +1,0 @@
-var macaddress = require('macaddress')
