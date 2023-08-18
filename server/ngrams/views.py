@@ -16,6 +16,8 @@ def ngram_comparison(request):
             ngrams1 = list(ngrams(text1.split(), ngram_size))
             ngrams2 = list(ngrams(text2.split(), ngram_size))
 
+            print("Hello")
+
             comparison = {
                 'text1_ngrams': ngrams1,
                 'text2_ngrams': ngrams2
@@ -23,6 +25,6 @@ def ngram_comparison(request):
 
             return JsonResponse(comparison)
         except Exception as e:
-            return JsonResponse({'error': 'An error occurred during ngram comparison.'})
+            return JsonResponse({'error': 'An error occurred during ngram comparison.', e:e})
     else:
         return JsonResponse({'error': 'Invalid request method'})
