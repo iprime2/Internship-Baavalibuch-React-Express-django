@@ -118,6 +118,8 @@ Watch a short demo video showcasing the functionality and a walkthrough of the c
      ```
      
       The frontend will start running on http://localhost:3000.
+
+  5. Open http://localhost:3001 in your web browser to access the PWA and test the functionality.
   
     
   
