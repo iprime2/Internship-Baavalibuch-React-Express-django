@@ -16,6 +16,16 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
   - [x] Created separate repositories and branches for each component and merged them for submission.
   - [x] Bonus: Containerized each component using Docker.
 
+### Demo Video
+
+Watch a short demo video showcasing the functionality and a walkthrough of the code [here](insert-link-to-video).
+
+### Docker Images and Container Images
+
+![Screenshot](docker1.png)
+![Screenshot](docker2.png)
+![Screenshot](docker3.png)
+
 
 ## Getting Started
 
