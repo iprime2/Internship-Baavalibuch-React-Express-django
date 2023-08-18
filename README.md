@@ -1,6 +1,15 @@
-# Ngram with React, NodeJs, ExpressJs, Django, MongoDB, Docker 
+# Progressive Web App with React, NodeJs, ExpressJs, Django, MongoDB, and Docker 
 
 This is a project that demonstrates the integration of a Progressive Web App (PWA) frontend with an ExpressJS backend and a Django API for ngrams comparison using NLTK.
+
+## Project Description
+
+This project showcases the seamless integration of a Progressive Web App (PWA) frontend with an ExpressJS backend and utilizes a Django API for performing ngrams comparison using the Natural Language Toolkit (NLTK).
+
+The PWA frontend allows users to interact with the application interface, while the ExpressJS backend handles the business logic and data processing. The Django API serves as an interface between the frontend and the NLTK library, enabling efficient ngrams comparison.
+
+Each component, including the React PWA frontend, ExpressJS backend, and Django API, has been containerized using Docker for easy deployment and scalability.
+
 
 ### Directory Structure
   - api: Contains the ExpressJS backend API code.
