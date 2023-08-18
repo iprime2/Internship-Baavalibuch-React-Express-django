@@ -75,9 +75,28 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
 ### Usage
   1. Start the ExpressJS backend:
 
-   ```bash
-   cd express-backend
-   npm start
-   ```
+     ```bash
+     cd api
+     npm start
+     ```
+    The backend will start running on http://localhost:8080.
+
+  2. Start the Django API server:
+
+      ```bash
+        cd server
+        python manage.py runserver
+      ```
+      The python backend will start running on http://127.0.0.1:8000/
+
+  4. Start the React frontend:
+
+     ```bash
+     cd client
+     pnpm run start
+     ```
+    The frontend will start running on http://localhost:3000.
+
+  
 
 
