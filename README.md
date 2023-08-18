@@ -29,12 +29,13 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
 
 1. Clone the repository:
 
-   ```bash
+   ```shell
    git clone https://github.com/iprime2/Internship-Baavalibuch-React-Express-django
   ```
 
 2. Install dependencies for the api backend:
-  ```bash
+
+  ```shell
   cd api
   npm install
   ```
