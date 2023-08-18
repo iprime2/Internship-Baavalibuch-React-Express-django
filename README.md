@@ -27,7 +27,7 @@ Each component, including the React PWA frontend, ExpressJS backend, and Django 
 
 ### Demo Video
 
-Watch a short demo video showcasing the functionality and a walkthrough of the code [here](insert-link-to-video).
+Watch a short demo video showcasing the functionality and a walkthrough of the code [here](https://drive.google.com/file/d/1ZGVcdRlgI3m0G4FEVIK15vYaRDLZ2ZtO/view?usp=sharing).
 
 ### Docker Images and Container Images
 
