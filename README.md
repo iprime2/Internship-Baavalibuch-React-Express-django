@@ -79,7 +79,8 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
      cd api
      npm start
      ```
-    The backend will start running on http://localhost:8080.
+     
+      The backend will start running on http://localhost:8080.
 
   2. Start the Django API server:
 
@@ -87,7 +88,8 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
       cd server
       python manage.py runserver
       ```
-    The python backend will start running on http://127.0.0.1:8000/
+      
+      The python backend will start running on http://127.0.0.1:8000/
 
   4. Start the React frontend:
 
@@ -95,7 +97,8 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
       cd client
       pnpm run start
      ```
-    The frontend will start running on http://localhost:3000.
+     
+      The frontend will start running on http://localhost:3000.
   
     
   
