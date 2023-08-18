@@ -29,21 +29,21 @@ This is a project that demonstrates the integration of a Progressive Web App (PW
 
 1. Clone the repository:
 
-   ```shell
-   git clone https://github.com/iprime2/Internship-Baavalibuch-React-Express-django
-  ```
+```shell
+git clone https://github.com/iprime2/Internship-Baavalibuch-React-Express-django
+```
 
 2. Install dependencies for the api backend:
 
-  ```shell
-  cd api
-  npm install
-  ```
+```shell
+cd api
+npm install
+```
 
-3. Install dependencies for the React PWA frontend:
+3. Install dependencies for the React frontend:
 
-  ```bash
-  cd react-pwa-frontend
-  npm install
-  ```
+``shell
+cd client
+pnpm install
+```
 
