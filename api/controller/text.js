@@ -17,23 +17,17 @@ const getText = async (req, res) => {
 
     const randomText = await TextModel.findOne({})
 
-    // const data = {
-    //   text1: text,
-    //   text2: randomText.text,
-    // }
-
     const data = {
       text1: text,
       text2: randomText.text,
     }
 
-    const ngaramRes = await axios.post(
-      'http://127.0.0.1:8000/api/ngrams-text/',
+    const ngramsRes = await axios.post(
+      'http://localhost:8000/api/ngrams-text/',
       data
     )
 
-    const ngramsComparison = ngaramRes.data
-    console.log(ngramsComparison)
+    const ngramsComparison = ngramsRes.data
 
     res.status(200).json(ngramsComparison)
   } catch (error) {

@@ -54,7 +54,23 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = [
+  'http://localhost:3000',
+  'http://localhost:5000',
+  'http://localhost:8080',
+  'https://internship-api-nmbt.onrender.com'
+]
+
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+
 
 ROOT_URLCONF = 'server.urls'
 
@@ -77,14 +93,7 @@ TEMPLATES = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-CORS_ALLOW_METHODS = (
-    "DELETE",
-    "GET",
-    "OPTIONS",
-    "PATCH",
-    "POST",
-    "PUT",
-)
+
 
 WSGI_APPLICATION = 'server.wsgi.application'
 
